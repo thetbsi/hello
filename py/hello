@@ -12,14 +12,14 @@ def print_plain(who="world"):
     """
     print("Hello " + who + "!")
 
-def print_color():
+def print_color(who="world"):
     """Prints hello in a random color each time"""
-    print(c.rc() + "helloworld" + c.reset)
+    print(c.rc() + "hello " + who + "!" + c.reset)
 
 if __name__ == '__main__':
     import sys
     who = "world"
-    if len(sys.argv) == 1:
-        print_plain()
-    else:
-        print_plain(sys.argv[1])
+    if len(sys.argv) > 1:
+        who = sys.argv[1]
+    print_plain(who)
+    print_color(who)
