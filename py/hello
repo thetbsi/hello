@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-import skilstak.color as c
+
+import skilstak.colors as c
 
 """My super awesome hello world program."""
 
@@ -11,12 +12,14 @@ def print_plain(who="world"):
     """
     print("Hello " + who + "!")
 
-def color();
+def print_color():
     """Prints hello in a random color each time"""
-    print(c.rc() + "hello" + c.rc() + "world" + 
+    print(c.rc() + "helloworld" + c.reset)
+
 if __name__ == '__main__':
     import sys
     who = "world"
-    if len(sys.argv) > 1:
-        who = sys.argv[1]
-    print_plain(who)
+    if len(sys.argv) == 1:
+        print_plain()
+    else:
+        print_plain(sys.argv[1])
