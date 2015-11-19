@@ -36,12 +36,8 @@ def hello(kind='plain'):
 
 if __name__ == '__main__':
     from sys import argv
-    name == " world"    
     option = " "
-    if len(argv) > 1:
-        who = argv[1]
-    try:
-        if argv == [0]:
-            option = [1]
-        else:
+
+    if len(argv) == 2:
+        
 
