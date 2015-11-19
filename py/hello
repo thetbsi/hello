@@ -17,9 +17,6 @@ def print_color(who="world"):
     print(c.rc() + "hello " + who + "!" + c.reset)
 
 if __name__ == '__main__':
-    import sys
-    who = "world"
-    if len(sys.argv) > 1:
-        who = sys.argv[1]
-    print_plain(who)
-    print_color(who)
+    who="world"
+    option = ""
+    if option 
