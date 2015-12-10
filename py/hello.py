@@ -44,19 +44,8 @@ def print_multi(message):
     while True:
         print(c.clear + c.multi(message))
         time.sleep(0.5)
-
-def print_merica(message):
-    """Fills the screen with Merica colors <message>.
-
-    Args:
-        message (str): message to print
-
-    """
-    print(c.clear)
-    while True:
-        print(c.merica(message), end=" ")
-
-def parse_args():
+    
+def parse_args():    
     """Parse and return properties (name, option)
 
     Returns:
