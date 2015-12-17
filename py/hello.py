@@ -1,8 +1,4 @@
-#!/usr/bin/env python3
-
 import skilstak.colors as c
-
-"""My super awesome hello world program."""
 
 def print_plain(message):
     """prints <message> in plain text>"""
@@ -16,7 +12,3 @@ def print_nyan(message):
     """Prints <message> forever"""
     while True:
         print(c.rc() + message , end=" ")
-
-if __name__ == '__main__':
-    print_nyan("world")
-    
