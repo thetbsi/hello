@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import skilstak.colors as c
+import time
 
 """My super awesome hello world program."""
 
@@ -12,11 +13,40 @@ def print_color(message):
     """Prints hello in a random color each time"""
     print(c.rc() + message + "!" + c.reset)
 
-def print_nyan(message):
-    """Prints <message> forever"""
+def print_multi(message):
+    """Prints <message> in diffrent colors"""
     while True:
-        print(c.rc() + message , end=" ")
+        print(c.clear + c.multi(message))
+        time.sleep(0.5)
+
+def print_nyan(message):
+    """Print <message> forever"""
+    while True:
+        print(c.rc() + message)
 
 if __name__ == '__main__':
-    print_nyan("world")
+    from sys import argv
     
+    option = ""
+    name = "world"
+
+    if len(argv) == 2:
+        if argv[1].startswith('-'):
+            option = argv[1]
+        else:
+            name = argv[1]
+    
+    if len(argv) > 2:
+            option = argv[1]
+            name = argv[2]
+    
+    message = "Hello " + name
+    
+    if option == "-m": 
+        print_multi(message)
+    elif option == "-c":
+        print_color
+    elif option == "-n":
+        print_nyan
+    else:
+        print_plain(message)
