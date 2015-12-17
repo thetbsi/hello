@@ -4,19 +4,19 @@ import skilstak.colors as c
 
 """My super awesome hello world program."""
 
-def print_plain(who="world"):
-    """Simple prints hello to the screen
+def print_plain(message):
+    """prints <message> in plain text>"""
+    print(message)
 
-    Args:
-        who (str): Who are we saying hello to
-    """
-    print("Hello " + who + "!")
-
-def print_color(who="world"):
+def print_color(message):
     """Prints hello in a random color each time"""
-    print(c.rc() + "hello " + who + "!" + c.reset)
+    print(c.rc() + message + "!" + c.reset)
+
+def print_nyan(message):
+    """Prints <message> forever"""
+    while True:
+        print(c.rc() + message , end=" ")
 
 if __name__ == '__main__':
-    who="world"
-    option = ""
-    if option 
+    print_nyan("Hello world")
+    
