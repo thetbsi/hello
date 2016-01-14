@@ -17,7 +17,7 @@ func printRandom() {
 func main() {
 	//printMulti()
 	//printRandom()
-	a, thingsandstuff := i.Prompt("text")
+	a, thingsandstuff := i.Prompt("--> ")
 	if thingsandstuff != nil {
 		panic(thingsandstuff)
 
