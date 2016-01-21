@@ -7,11 +7,6 @@ import (
 	//i "github.com/skilstak/go/input"
 )
 
-func getName(title string) string {
-	var name string = "Matty"
-	return title + " " + name
-}
-
 func printForever(message string) {
 	for {
 		fmt.Println(c.Clear + c.Multi("Hello World!"))
