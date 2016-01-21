@@ -5,6 +5,10 @@ import (
 	c "github.com/skilstak/go/colors"
 	i "github.com/skilstak/go/input"
 )
+func getName() (name string) {
+	name = "Matty"
+	return
+}
 
 func printForever(message string) {
 	for {
