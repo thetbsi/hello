@@ -6,21 +6,31 @@ import (
 	i "github.com/skilstak/go/input"
 )
 
-func printMulti() {
+func printForever(message string) {
+	for {
+	fmt.Println(c.Clear + c.Multi("Hello World!"))
+	}
+}
+
+func printRegular(message string) {
+	fmt.Print("Hello World!")
+}
+
+func printMulti(message string) {
 	fmt.Println(c.Clear + c.Multi("Hello World!"))
 }
 
-func printRandom() {
+func printRandom(message string) {
 	fmt.Println(c.Clear + c.Rc() + "Hello World!")
 }
 
+func name() string {
+	
+}
 func main() {
-	//printMulti()
-	//printRandom()
-	a, hello := i.Prompt("--> ")
-	if hello != nil {
-		panic(hello)
+	printMulti("Hello"  + getName())
+	//a, hello := i.Prompt("--> ")
+	//if hello != nil {
+	//	panic(hello)
 	}
-	fmt.Println(input)
-	if strings.Contains(input,"hello")
 }
