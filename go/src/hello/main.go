@@ -3,16 +3,18 @@ package main
 import (
 	"fmt"
 	c "github.com/skilstak/go/colors"
-	i "github.com/skilstak/go/input"
+	"os"
+	//i "github.com/skilstak/go/input"
 )
-func getName() (name string) {
-	name = "Matty"
-	return
+
+func getName(title string) string {
+	var name string = "Matty"
+	return title + " " + name
 }
 
 func printForever(message string) {
 	for {
-	fmt.Println(c.Clear + c.Multi("Hello World!"))
+		fmt.Println(c.Clear + c.Multi("Hello World!"))
 	}
 }
 
@@ -28,13 +30,11 @@ func printRandom(message string) {
 	fmt.Println(c.Clear + c.Rc() + "Hello World!")
 }
 
-func name() string {
-	
-}
+//func name() string {
+
+//}
 func main() {
-	printMulti("Hello"  + getName())
-	//a, hello := i.Prompt("--> ")
-	//if hello != nil {
-	//	panic(hello)
-	}
+	//message := "Hello World"
+	sentence := getName("Hello")
+	printMulti(sentence)
 }

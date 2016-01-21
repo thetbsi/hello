@@ -3,3 +3,4 @@
 
 export GOPATH=$HOME/repos/hello/go
 export PATH=$HOME/repos/hello/go/bin:$PATH
+export GOBIN=$HOME/repos/hello/go/bin:$PATH
