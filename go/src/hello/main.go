@@ -34,9 +34,9 @@ func printRandom(message string) {
 
 //}
 func main() {
-	name := os.Args[1]
-	println(name)
-	//message := "Hello World"
-	//sentence := getName("Hello")
-	//printMulti(sentence)
+	name := "You"
+	if len(os.Args) > 1 {
+		name = os.Args[1]
+	}
+	printMulti("Hello" + name)
 }
