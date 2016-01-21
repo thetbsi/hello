@@ -17,10 +17,10 @@ func printRandom() {
 func main() {
 	//printMulti()
 	//printRandom()
-	a, thingsandstuff := i.Prompt("--> ")
-	if thingsandstuff != nil {
-		panic(thingsandstuff)
-
+	a, hello := i.Prompt("--> ")
+	if hello != nil {
+		panic(hello)
 	}
-	fmt.Println(a)
+	fmt.Println(input)
+	if strings.Contains(input,"hello")
 }
