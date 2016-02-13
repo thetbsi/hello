@@ -9,20 +9,20 @@ import (
 
 func printForever(message string) {
 	for {
-		fmt.Println(c.Clear + c.Multi("Hello World!"))
+		fmt.Println(c.Clear + c.Multi(message))
 	}
 }
 
 func printRegular(message string) {
-	fmt.Print("Hello World!")
+	fmt.Print(message)
 }
 
 func printMulti(message string) {
-	fmt.Println(c.Clear + c.Multi("Hello World!"))
+	fmt.Println(c.Clear + c.Multi(message))
 }
 
 func printRandom(message string) {
-	fmt.Println(c.Clear + c.Rc() + "Hello World!")
+	fmt.Println(c.Clear + c.Rc() + message)
 }
 
 //func name() string {
