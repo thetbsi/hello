@@ -3,25 +3,25 @@ package main
 import (
 	"fmt"
 	c "github.com/skilstak/go/colors"
-	"os"
+	//"os"
 	//i "github.com/skilstak/go/input"
 )
 
-func printForever(message string) {
+func PrintForever(message string) {
 	for {
 		fmt.Println(c.Clear + c.Multi(message))
 	}
 }
 
-func printRegular(message string) {
+func PrintRegular(message string) {
 	fmt.Print(message)
 }
 
-func printMulti(message string) {
+func PrintMulti(message string) {
 	fmt.Println(c.Clear + c.Multi(message))
 }
 
-func printRandom(message string) {
+func PrintRandom(message string) {
 	fmt.Println(c.Clear + c.Rc() + message)
 }
 
