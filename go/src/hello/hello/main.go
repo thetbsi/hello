@@ -1,7 +1,7 @@
 package main
 
 import (
-	l "lib"
+	l "hello"
 	//"mt"
 	//c "github.com/skilstak/go/colors"
 	"os"
