@@ -3,6 +3,7 @@ package hello
 import (
 	"fmt"
 	c "github.com/skilstak/go/colors"
+	"string"
 	"time"
 	//"os"
 	//i "github.com/skilstak/go/input"
@@ -20,13 +21,15 @@ func PrintRegular(message string) {
 
 func PrintMulti(message string) {
 	for {
-		fmt.Println(c.Clear + c.Multi(message))
+		fmt.Println(c.Clear + c.Multi(message) + " " + c.X)
 		time.sleep(500 * time.Millisecond)
 	}
 }
 
 func PrintColor(message string) {
-	fmt.Println(c.Clear + c.Rc() + message)
+	for {
+		fmt.Println(c.Rc() + message + " " + c.X)
+	}
 }
 
 //func name() string {
