@@ -28,10 +28,3 @@ func printRandom(message string) {
 //func name() string {
 
 //}
-func main() {
-	name := "You"
-	if len(os.Args) > 1 {
-		name = os.Args[1]
-	}
-	printMulti("Hello" + name)
-}
